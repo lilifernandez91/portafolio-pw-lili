@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.menu-container {
+    height: 50px;
+}
+
+.main-website {
+    height: calc(100vh - 50px);
+}
+
+.footer-container {
+    height: 50px;
+}

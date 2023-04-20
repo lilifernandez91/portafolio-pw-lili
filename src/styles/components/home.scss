@@ -1,0 +1,18 @@
+.home-container {
+    height: 100%;
+
+    &__content {
+        height: 100%;
+        @include position-center-column;
+
+        &__text {
+            @include animation-title;
+        }
+
+        &__rol {
+            color: $color-letter-menu;
+            font-size: 20px;
+            margin-top: 0;
+        }
+    }
+}

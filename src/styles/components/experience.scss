@@ -1,0 +1,34 @@
+.experience-container {
+    height: 100%;
+
+    &__content {
+        height: 100%;
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+
+            &__title {
+                color: $color-letter-menu;
+            }
+
+            &__image {
+                padding-top: 8px;
+            }
+        }
+
+        &__experience {
+            height: 100%;
+            @include position-center-justify;
+
+            &__list {
+                border: 1px solid $color-letter-menu;
+                font-size: 20px;
+                line-height: 1.5;
+                color: $color-content;
+                text-align: justify;
+                list-style: none;
+            }
+        }
+    }
+}

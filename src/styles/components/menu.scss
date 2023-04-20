@@ -1,0 +1,19 @@
+.menu-container {
+    background-color: $color-navigation-menu;
+    @include position-left-center;
+
+    &__button {
+        color: $color-white;
+        font-size: 36px;
+        cursor: pointer;
+    }
+
+    &__link {
+        text-decoration: none;
+
+        &__text {
+            color: $color-letter-menu;
+            text-transform: uppercase;
+        }
+    }
+}

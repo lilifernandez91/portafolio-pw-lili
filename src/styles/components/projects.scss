@@ -1,0 +1,21 @@
+.projects-container {
+    height: 100%;
+
+    &__content {
+        height: 100%;
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+
+            &__title {
+                color: $color-letter-menu;
+            }
+        }
+
+        &__body {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

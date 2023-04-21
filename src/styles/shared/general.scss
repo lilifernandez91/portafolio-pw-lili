@@ -2,14 +2,23 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    overflow-y: auto;
+
+    p {
+        font-size: 16px;
+        line-height: 28px;
+    }
 }
 
 .menu-container {
     height: 50px;
+    position: sticky;
+    top: 0;
+    padding-left: 10px;
 }
 
 .main-website {
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 110px);
 }
 
 .footer-container {

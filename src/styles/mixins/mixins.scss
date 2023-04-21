@@ -1,6 +1,14 @@
-@mixin position-left-center {
+@mixin position {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@mixin position-center-justify {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @mixin position-center-row {
@@ -17,16 +25,17 @@
     justify-content: center;
 }
 
-@mixin position-center-align {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@mixin text {
+    color: $color-content;
+    text-align: justify;
 }
 
-@mixin position-center-justify {
+@mixin image {
+    padding-top: 8px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 @mixin animation-title {

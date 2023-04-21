@@ -1,33 +1,27 @@
 .skills-container {
-    height: 100%;
 
     &__content {
-        height: 100%;
+        display: flex;
+        flex-direction: column;
 
         &__header {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
 
             &__title {
                 color: $color-letter-menu;
             }
-
-            &__image {
-                padding-top: 8px;
-            }
         }
 
         &__body {
-            height: 100%;
-            @include position-center-justify;
 
             &__text {
-                border: 1px solid $color-letter-menu;
-                font-size: 20px;
-                line-height: 1.5;
-                color: $color-content;
-                text-align: justify;
+                @include text;
             }
+        }
+
+        &__image {
+            @include image;
         }
     }
 }

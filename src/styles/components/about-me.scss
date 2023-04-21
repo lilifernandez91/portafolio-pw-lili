@@ -1,22 +1,14 @@
 .about-me-container {
-    height: 100%;
 
     &__content {
-        height: 100%;
+        @include position;
 
         &__title {
             color: $color-letter-menu;
         }
 
         &__text {
-            @include position-center-align;
-            height: 100%;
-            font-size: 20px;
-            line-height: 1.5;
-            color: $color-content;
-            text-align: justify;
-            padding: 10px;
-            margin: 0;
+            @include text;
         }
     }
 }

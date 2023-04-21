@@ -37,7 +37,6 @@ export default function MenuComponent() {
                                 <Link key={item} href={item.route} className="menu-container__link">
                                     <ListItem disablePadding>
                                         <ListItemButton>
-                                            <ListItemIcon></ListItemIcon>
                                             <ListItemText primary={item.text} className="menu-container__link__text" />
                                         </ListItemButton>
                                     </ListItem>

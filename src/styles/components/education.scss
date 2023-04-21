@@ -1,28 +1,38 @@
 .education-container {
-    height: 100%;
 
     &__content {
-        height: 100%;
+        @include position-center-justify;
 
         &__header {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
+            align-items: center;
 
             &__title {
                 color: $color-letter-menu;
             }
-
-            &__image {
-                padding-top: 8px;
-            }
         }
 
         &__education {
-            height: 100%;
-            @include position-center-justify;
 
             &__text {
                 text-transform: uppercase;
+            }
+
+            &__centers {
+                display: flex;
+                flex-direction: column;
+
+                .MuiButtonBase-root[aria-expanded="true"] {
+                    border-bottom: 1px solid $color-border;
+                }
+            }
+
+            &__image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
             }
         }
     }

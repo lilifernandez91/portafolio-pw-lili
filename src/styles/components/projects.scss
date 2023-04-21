@@ -1,12 +1,12 @@
 .projects-container {
-    height: 100%;
 
     &__content {
-        height: 100%;
+        @include position-center-justify;
 
         &__header {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
+            align-items: center;
 
             &__title {
                 color: $color-letter-menu;

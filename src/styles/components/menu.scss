@@ -1,6 +1,7 @@
 .menu-container {
     background-color: $color-navigation-menu;
-    @include position-left-center;
+    display: flex;
+    align-items: center;
 
     &__button {
         color: $color-white;

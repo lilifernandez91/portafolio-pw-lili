@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
 import { imagesProjects } from '@/data/projects';
 import Link from 'next/link';
+import { ImageListItem } from '@mui/material';
 
 const ProjectsComponent = () => {
 
@@ -22,6 +22,7 @@ const ProjectsComponent = () => {
                                     srcSet={`${item.url}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                                     alt={item.title}
                                     loading="lazy"
+                                    style={{ height: '175px', width: '100%', borderRadius: '10px' }}
                                 />
                             </ImageListItem>
                         </Link>

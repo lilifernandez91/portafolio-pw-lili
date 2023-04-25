@@ -8,7 +8,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 const FooterComponent = () => {
     return (
         <footer className="footer-container">
-            <div className="footer-container__content">
+            <div className="footer-container__content container">
                 <Link href={"tel://+34660942023"} className="footer-container__content__link">
                     <PhoneInTalkIcon className="footer-container__content__link__icon" />
                 </Link>

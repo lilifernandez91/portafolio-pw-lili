@@ -1,4 +1,4 @@
-.skills-container {
+.experience-container {
 
     &__content {
         display: flex;
@@ -18,10 +18,6 @@
             &__text {
                 @include text;
             }
-        }
-
-        &__image {
-            @include image;
         }
     }
 }

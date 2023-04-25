@@ -1,4 +1,6 @@
 import ExperienceComponent from "@/components/page-components/experience";
+import SkillsComponent from "@/components/page-components/skills";
+import { Divider } from "@mui/material";
 import Head from "next/head";
 
 const ExperiencePage = () => {
@@ -8,6 +10,8 @@ const ExperiencePage = () => {
                 <title>Experiencia</title>
             </Head>
             <ExperienceComponent />
+            <Divider />
+            <SkillsComponent />
         </section>
     );
 }

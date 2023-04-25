@@ -14,8 +14,11 @@
         }
 
         &__body {
-            display: flex;
-            justify-content: center;
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 }

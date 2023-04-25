@@ -1,7 +1,14 @@
 .menu-container {
+    display: flex;
+    justify-content: space-between;
     background-color: $color-navigation-menu;
     display: flex;
     align-items: center;
+    z-index: 999;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    padding-left: 10px;
 
     &__button {
         color: $color-white;
@@ -16,5 +23,9 @@
             color: $color-letter-menu;
             text-transform: uppercase;
         }
+    }
+
+    &__avatar {
+        padding-right: 10px;
     }
 }

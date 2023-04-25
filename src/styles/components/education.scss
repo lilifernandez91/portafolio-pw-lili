@@ -1,4 +1,4 @@
-.education-container {
+.about-me-container {
 
     &__content {
         @include position-center-justify;
@@ -26,13 +26,6 @@
                 .MuiButtonBase-root[aria-expanded="true"] {
                     border-bottom: 1px solid $color-border;
                 }
-            }
-
-            &__image {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 10px;
             }
         }
     }

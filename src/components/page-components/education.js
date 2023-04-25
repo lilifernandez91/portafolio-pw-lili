@@ -14,12 +14,12 @@ const EducationComponent = () => {
     };
 
     return (
-        <div className='education-container__content'>
-            <div className='education-container__content__header'>
-                <h1 className="education-container__content__header__title">Mis estudios</h1>
+        <div className='about-me-container__content'>
+            <div className='about-me-container__content__header'>
+                <h1 className="about-me-container__content__header__title">Mis estudios</h1>
             </div>
-            <div className="education-container__content__education">
-                <div className="education-container__content__education__centers">
+            <div className="about-me-container__content__about-me">
+                <div className="about-me-container__content__about-me__centers">
                     <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -29,7 +29,7 @@ const EducationComponent = () => {
                             <Typography sx={{ width: '33%', flexShrink: 0 }}>
                                 <Image src="/images/imagen-bejob.jpeg" alt="" width={50} height={50} />
                             </Typography>
-                            <Typography className='education-container__content__education__text' sx={{ color: 'text.secondary' }}>Bejob</Typography>
+                            <Typography className='about-me-container__content__about-me__text' sx={{ color: 'text.secondary' }}>Bejob</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -46,7 +46,7 @@ const EducationComponent = () => {
                             <Typography sx={{ width: '33%', flexShrink: 0 }}>
                                 <Image src="/images/adalab_logo.jpeg" alt="" width={40} height={40} />
                             </Typography>
-                            <Typography className='education-container__content__education__text' sx={{ color: 'text.secondary' }}>
+                            <Typography className='about-me-container__content__about-me__text' sx={{ color: 'text.secondary' }}>
                                 Adalab
                             </Typography>
                         </AccordionSummary>
@@ -65,7 +65,7 @@ const EducationComponent = () => {
                             <Typography sx={{ width: '33%', flexShrink: 0 }}>
                                 <Image src="/images/imagen-udelar.png" alt="" width={50} height={50} />
                             </Typography>
-                            <Typography className='education-container__content__education__text' sx={{ color: 'text.secondary' }}>
+                            <Typography className='about-me-container__content__about-me__text' sx={{ color: 'text.secondary' }}>
                                 Universidad de la República
                             </Typography>
                         </AccordionSummary>
@@ -84,19 +84,16 @@ const EducationComponent = () => {
                             <Typography sx={{ width: '33%', flexShrink: 0 }}>
                                 <Image src="/images/imagen-universidad.jpeg" alt="" width={50} height={50} />
                             </Typography>
-                            <Typography className='education-container__content__education__text' sx={{ color: 'text.secondary' }}>
+                            <Typography className='about-me-container__content__about-me__text' sx={{ color: 'text.secondary' }}>
                                 Universidad de Ciencias Médicas
                             </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Licenciatura en Fonoaudiología obtenida en la Universidad de Ciencias Médicas de Villa Clara, Cuba, durante el período 2010-2015. En este programa, adquirí sólidos conocimientos teóricos y prácticos en el ámbito de la fonoaudiología, lo que me permitió ejercer mi profesión con éxito en  países.
+                                Licenciatura en Fonoaudiología obtenida en la Universidad de Ciencias Médicas de Villa Clara, Cuba, durante el período 2010-2015. En este programa, adquirí sólidos conocimientos teóricos y prácticos en el ámbito de la fonoaudiología, lo que me permitió ejercer mi profesión con éxito.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
-                </div>
-                <div className="education-container__content__education__image">
-                    <Image src="/images/estudios.jpeg" alt="" width={170} height={200} />
                 </div>
             </div>
         </div>

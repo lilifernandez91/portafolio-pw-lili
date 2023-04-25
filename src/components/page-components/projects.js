@@ -1,9 +1,12 @@
-/* eslint-disable @next/next/no-img-element */
 import * as React from 'react';
-import ImageList from '@mui/material/ImageList';
-import { imagesProjects } from '@/data/projects';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import Divider from '@mui/material/Divider';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import Avatar from '@mui/material/Avatar';
 import Link from 'next/link';
-import { ImageListItem } from '@mui/material';
+import { imagesProjects } from '@/data/projects';
 
 const ProjectsComponent = () => {
 
@@ -13,24 +16,35 @@ const ProjectsComponent = () => {
                 <h1 className="projects-container__content__header__title">Mis proyectos</h1>
             </div>
             <div className="projects-container__content__body">
-                <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                    {imagesProjects.map((item, index) => (
-                        <Link href={item.link ?? ''} key={index} target='_blank'>
-                            <ImageListItem>
-                                <img
-                                    src={`${item.url}?w=164&h=164&fit=crop&auto=format`}
-                                    srcSet={`${item.url}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                    alt={item.title}
-                                    loading="lazy"
-                                    style={{ height: '175px', width: '100%', borderRadius: '10px' }}
+                <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
+                    <ListItem alignItems="flex-start" className='projects-container__content__body__list'>
+                        {imagesProjects.map((item, index) => (
+                            <>
+                                <ListItemAvatar>
+                                    <Avatar alt={item.title} src={item.url} />
+                                </ListItemAvatar>
+                                <ListItemText primary={item.title} />
+                                <ListItemText secondary={item.technologies} />
+                                <ListItemText secondary={
+                                    <React.Fragment>
+                                        <div>
+                                            <Link href={item.link ?? ''} key={index} target='_blank'>
+                                                {item.link}
+                                            </Link>
+                                        </div>
+                                        <Divider style={{ marginTop: '24px' }} width={500} />
+                                    </React.Fragment>
+                                }
                                 />
-                            </ImageListItem>
-                        </Link>
-                    ))}
-                </ImageList>
+                            </>
+                        ))}
+                    </ListItem>
+                </List>
             </div>
         </div>
     );
 }
 
 export default ProjectsComponent;
+
+

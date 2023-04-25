@@ -11,6 +11,7 @@ import { useState } from 'react';
 import { navigationItems } from '@/data/navigation-items';
 import { Fragment } from 'react';
 import Link from 'next/link';
+import AvatarComponent from '../page-components/avatar';
 
 export default function MenuComponent() {
     const [position] = useState('left');
@@ -46,6 +47,9 @@ export default function MenuComponent() {
                     </Box>
                 </SwipeableDrawer>
             </Fragment>
+            <div className='menu-container__avatar'>
+                <AvatarComponent />
+            </div>
         </div>
     );
 }

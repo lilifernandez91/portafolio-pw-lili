@@ -1,4 +1,6 @@
 import AboutMeComponent from "@/components/page-components/about.me";
+import EducationComponent from "@/components/page-components/education";
+import { Divider } from "@mui/material";
 import Head from "next/head";
 
 const AboutMePage = () => {
@@ -8,6 +10,8 @@ const AboutMePage = () => {
                 <title>Sobre mí</title>
             </Head>
             <AboutMeComponent />
+            <Divider />
+            <EducationComponent />
         </section>
     );
 }

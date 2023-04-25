@@ -1,4 +1,4 @@
-import AboutMeComponent from "@/components/page-components/about.me";
+import AboutMeComponent from "@/components/page-components/about-me";
 import EducationComponent from "@/components/page-components/education";
 import { Divider } from "@mui/material";
 import Head from "next/head";

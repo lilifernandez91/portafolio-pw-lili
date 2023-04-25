@@ -1,7 +1,6 @@
 import * as React from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import Divider from '@mui/material/Divider';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
@@ -19,24 +18,25 @@ const ProjectsComponent = () => {
                 <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
                     <ListItem alignItems="flex-start" className='projects-container__content__body__list'>
                         {imagesProjects.map((item, index) => (
-                            <>
-                                <ListItemAvatar>
-                                    <Avatar alt={item.title} src={item.url} />
-                                </ListItemAvatar>
-                                <ListItemText primary={item.title} />
-                                <ListItemText secondary={item.technologies} />
-                                <ListItemText secondary={
-                                    <React.Fragment>
-                                        <div>
-                                            <Link href={item.link ?? ''} key={index} target='_blank'>
-                                                {item.link}
-                                            </Link>
-                                        </div>
-                                        <Divider style={{ marginTop: '24px' }} width={500} />
-                                    </React.Fragment>
-                                }
-                                />
-                            </>
+                            <div key={index}>
+                                <div className="projects-container__content__body__list__title">
+                                    <ListItemAvatar>
+                                        <Avatar alt={item.title} src={item.url} />
+                                    </ListItemAvatar>
+                                    <ListItemText primary={item.title} />
+                                </div>
+                                <div className="projects-container__content__body__list__title">
+                                    <ListItemText secondary={item.technologies} />
+                                </div>
+                                <div>
+                                    <ListItemText secondary={
+                                        <Link href={item.link ?? ''} key={`link-${index}`} target='_blank'>
+                                            Visite el sitio web
+                                        </Link>
+                                    }
+                                    />
+                                </div>
+                            </div>
                         ))}
                     </ListItem>
                 </List>

@@ -34,8 +34,8 @@ export default function MenuComponent() {
                         onKeyDown={() => setOpen(false)}
                     >
                         <List>
-                            {navigationItems.filter(x => x.section === 1).map((item) => (
-                                <Link key={item} href={item.route} className="menu-container__link">
+                            {navigationItems.filter(x => x.section === 1).map((item, index) => (
+                                <Link key={index} href={item.route} className="menu-container__link">
                                     <ListItem disablePadding>
                                         <ListItemButton>
                                             <ListItemText primary={item.text} className="menu-container__link__text" />

@@ -33,7 +33,7 @@ const EducationComponent = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Programa formativo Samsung DesArrolladoras, impulsado por Samsung Dev Spain, donde he adquirido conocimientos en desarrollo web, Front-End y Full Stack durante el año 2022-2023. Este programa fue diseñado para mujeres con el objetivo de fomentar la igualdad de género en el ámbito de la tecnología.
+                                Programa formativo Samsung DesArrolladoras, impulsado por Samsung Dev Spain, durante el año 2022-2023. Me permitió adquirir conocimientos en desarrollo web, Front-End y Full Stack.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -52,7 +52,7 @@ const EducationComponent = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Curso intensivo de Programación Front End, impartido en España durante el año 2022, en una Escuela de Programación para Mujeres. Este curso me permitió profundizar mis conocimientos en programación web y adquirir nuevas habilidades en desarrollo Front-End.
+                                Curso intensivo de Programación Front-End, impartido en España, durante el año 2022. Me permitió conocer las diferentes áreas de la programación web y adquirir habilidades en desarrollo Front-End.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>

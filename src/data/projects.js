@@ -53,4 +53,16 @@ export const imagesProjects = [
         technologies: 'HTML, SASS/BEM, Next.js, Material UI',
         link: 'https://www.analiticafantasy.com/encuesta-de-satisfaccion',
     },
+    {
+        url: '/images/tienda-de-ropa.png',
+        title: 'Tienda de ropa',
+        technologies: 'HTML, CSS',
+        link: 'https://lilifernandez91.github.io/laboratorio-modulo-1/',
+    },
+    {
+        url: '/images/formulario.png',
+        title: 'Formulario',
+        technologies: 'HTML, CSS, JavaScript',
+        link: 'https://lilifernandez91.github.io/Prueba-de-laboratorio-desarrollo-Front-End-Nivel-2/',
+    },
 ];

@@ -12,12 +12,6 @@ export const imagesProjects = [
         link: 'https://lilifernandez91.github.io/modulo-3-evaluacion-intermedia-lilifernandez91/',
     },
     {
-        url: '/images/mokepon.png',
-        title: 'Mokepon',
-        technologies: 'HTML, CSS, JavaScript',
-        link: 'https://lilifernandez91.github.io/juego-de-mokepon-html-css-javascript/',
-    },
-    {
         url: '/images/numero-aleatorio.png',
         title: 'Número aleatorio',
         technologies: 'HTML, CSS, JavaScript',
@@ -54,7 +48,7 @@ export const imagesProjects = [
         link: 'https://www.analiticafantasy.com/encuesta-de-satisfaccion',
     },
     {
-        url: '/images/tienda-de-ropa.png',
+        url: '/images/tienda-ropa.png',
         title: 'Tienda de ropa',
         technologies: 'HTML, CSS',
         link: 'https://lilifernandez91.github.io/laboratorio-modulo-1/',
@@ -64,5 +58,11 @@ export const imagesProjects = [
         title: 'Formulario',
         technologies: 'HTML, CSS, JavaScript',
         link: 'https://lilifernandez91.github.io/Prueba-de-laboratorio-desarrollo-Front-End-Nivel-2/',
+    },
+    {
+        url: '/images/turnos.png',
+        title: 'Pantalla con turnos',
+        technologies: 'HTML, CSS, TypeScript',
+        link: 'https://laboratorio-modulo-4-lemoncode.vercel.app/',
     },
 ];

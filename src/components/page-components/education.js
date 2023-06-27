@@ -20,6 +20,23 @@ const EducationComponent = () => {
             </div>
             <div className="about-me-container__content__about-me">
                 <div className="about-me-container__content__about-me__centers">
+                    <Accordion expanded={expanded === 'panel0'} onChange={handleChange('panel0')}>
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls="panel1bh-content"
+                            id="panel1bh-header"
+                        >
+                            <Typography sx={{ width: '33%', flexShrink: 0 }}>
+                                <Image src="/images/lemoncode.jpeg" alt="" width={50} height={50} />
+                            </Typography>
+                            <Typography className='about-me-container__content__about-me__text' sx={{ color: 'text.secondary' }}>Lemoncode</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                            <Typography>
+                                Bootcamp de JavaScript + TypeScript. España. Año 2023.
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
                     <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -33,7 +50,7 @@ const EducationComponent = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Programa formativo Samsung DesArrolladoras, impulsado por Samsung Dev Spain, durante el año 2022-2023. Me permitió adquirir conocimientos en desarrollo web, Front-End y Full Stack.
+                                Curso de introducción al desarrollo web, desarrollo Front-End y desarrollo Full-Stack, impulsado por Samsung Dev Spain. España. Año 2022-2023.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -52,7 +69,7 @@ const EducationComponent = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Curso intensivo de Programación Front-End, impartido en España, durante el año 2022. Me permitió conocer las diferentes áreas de la programación web y adquirir habilidades en desarrollo Front-End.
+                                Bootcamp intensivo de Programación Front-End. España. Año 2022.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -71,7 +88,7 @@ const EducationComponent = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Homologación del título de Licenciatura en Fonoaudiología en la Facultad de Medicina de Montevideo, Uruguay, en el año 2018. Este proceso me permitió validar mi formación académica y obtener el reconocimiento correspondiente en este país.
+                                Homologación del título de Licenciatura en Fonoaudiología en la Facultad de Medicina de Montevideo. Uruguay. Año 2018.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -90,7 +107,7 @@ const EducationComponent = () => {
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
-                                Licenciatura en Fonoaudiología obtenida en la Universidad de Ciencias Médicas de Villa Clara, Cuba, durante el período 2010-2015. En este programa, adquirí sólidos conocimientos teóricos y prácticos en el ámbito de la fonoaudiología, lo que me permitió ejercer mi profesión con éxito.
+                                Licenciatura en Fonoaudiología obtenida en la Universidad de Ciencias Médicas de Villa Clara. Cuba. Año 2010-2015.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>

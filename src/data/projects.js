@@ -69,6 +69,6 @@ export const imagesProjects = [
         url: '/images/siete-media.png',
         title: 'Juego de las siete cartas y media',
         technologies: 'HTML, CSS, TypeScript',
-        link: 'https://laboratorio-modulo-5-lemoncode.vercel.app/',
+        link: 'https://laboratorio-modulo-6-lemoncode.vercel.app/',
     },
 ];
